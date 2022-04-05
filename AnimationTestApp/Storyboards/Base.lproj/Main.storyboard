@@ -80,7 +80,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="runButtonPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZE-dj-lak"/>
+                                    <action selector="runButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ma3-ks-2PT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -101,7 +101,6 @@
                         <outlet property="durationLabel" destination="hyQ-ZY-6BQ" id="Sni-dj-qQz"/>
                         <outlet property="forceLabel" destination="99e-ke-joK" id="JBg-9w-RNJ"/>
                         <outlet property="presetLabel" destination="5LD-It-dIi" id="r8H-Xl-8ew"/>
-                        <outlet property="runButton" destination="T1i-tx-M0L" id="mEP-5x-aFR"/>
                         <outlet property="springAnimationView" destination="1ZU-aM-2nV" id="FWK-Jf-QHn"/>
                     </connections>
                 </viewController>

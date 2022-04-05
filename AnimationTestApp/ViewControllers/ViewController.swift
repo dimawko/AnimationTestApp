@@ -19,8 +19,6 @@ class ViewController: UIViewController {
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var delayLabel: UILabel!
     
-    @IBOutlet var runButton: UIButton!
-    
     //MARK: - Private Properties
     private var animation = Animation.getAnimation()
     
@@ -33,7 +31,7 @@ class ViewController: UIViewController {
     }
     
     //MARK: - IBActions
-    @IBAction func runButtonPressed() {
+    @IBAction func runButtonPressed(_ sender: UIButton) {
         springAnimationView.animation = animation.preset
         springAnimationView.curve = animation.curve
         springAnimationView.force = animation.force
@@ -45,7 +43,7 @@ class ViewController: UIViewController {
         
         randomizeAnimation()
         
-        runButton.setTitle("Run \(animation.preset)", for: .normal)
+        sender.setTitle("Run \(animation.preset)", for: .normal)
     }
 }
 
