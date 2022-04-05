@@ -22,13 +22,13 @@ class ViewController: UIViewController {
     @IBOutlet var runButton: UIButton!
     
     //MARK: - Private Properties
-    private var animation = Animation()
+    private var animation = Animation.getAnimation()
     
     //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        getRandomAnimation()
+        randomizeAnimation()
         updateUI()
     }
     
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         
         updateUI()
         
-        getRandomAnimation()
+        randomizeAnimation()
         
         runButton.setTitle("Run \(animation.preset)", for: .normal)
     }
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
 
 //MARK: - Private methods
 extension ViewController {
-    private func getRandomAnimation() {
+    private func randomizeAnimation() {
         animation.preset = Spring.AnimationPreset.allCases.randomElement()?.rawValue ?? ""
         animation.curve = Spring.AnimationCurve.allCases.randomElement()?.rawValue ?? ""
         animation.force = Double.random(in: 0.1...1.0)
