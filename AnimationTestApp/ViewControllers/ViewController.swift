@@ -19,18 +19,17 @@ class ViewController: UIViewController {
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var delayLabel: UILabel!
     
-    private let animation = Animation.getRandomAnimation()
-
+    @IBOutlet var runButton: UIButton!
+    
+    private var animation = Animation()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        presetLabel.text = "Preset: \(animation.preset)"
-        curveLabel.text = "Curve: \(animation.curve)"
-        forceLabel.text = "Force: \(String(format: "%.2f", animation.force))"
-        durationLabel.text = "Duration: \(String(format: "%.2f", animation.duration))"
-        delayLabel.text = "Delay: \(String(format: "%.2f", animation.delay))"
-    }
 
+        getRandomAnimation()
+        runButton.setTitle("Run \(animation.preset)", for: .normal)
+    }
+    
     @IBAction func runButtonPressed() {
         springAnimationView.animation = animation.preset
         springAnimationView.curve = animation.curve
@@ -39,6 +38,26 @@ class ViewController: UIViewController {
         springAnimationView.delay = animation.delay
         
         springAnimationView.animate()
+        updateUI()
+        
+        getRandomAnimation()
+        runButton.setTitle("Run \(animation.preset)", for: .normal)
+    }
+    
+    private func getRandomAnimation() {
+        animation.preset = Spring.AnimationPreset.allCases.randomElement()!.rawValue
+        animation.curve = Spring.AnimationCurve.allCases.randomElement()!.rawValue
+        animation.force = Double.random(in: 0.1...1.0)
+        animation.duration = Double.random(in: 0.5...1.0)
+        animation.delay = Double.random(in: 0.1...1.0)
+    }
+    
+    private func updateUI() {
+        presetLabel.text = "Preset: \(animation.preset)"
+        curveLabel.text = "Curve: \(animation.curve)"
+        forceLabel.text = "Force: \(String(format: "%.2f", animation.force))"
+        durationLabel.text = "Duration: \(String(format: "%.2f", animation.duration))"
+        delayLabel.text = "Delay: \(String(format: "%.2f", animation.delay))"
     }
 }
 
