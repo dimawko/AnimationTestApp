@@ -90,13 +90,7 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="T1i-tx-M0L" secondAttribute="bottom" constant="30" id="Gv9-Yk-Rhy"/>
                             <constraint firstItem="1ZU-aM-2nV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="KzC-d3-xbq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="T1i-tx-M0L" secondAttribute="trailing" constant="40" id="XCP-bM-I7O"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ZU-aM-2nV" secondAttribute="trailing" constant="40" id="fPa-NE-4QA">
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1ZU-aM-2nV" secondAttribute="trailing" constant="40" id="fPa-NE-4QA"/>
                             <constraint firstItem="1ZU-aM-2nV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="gPe-Mc-D1R"/>
                             <constraint firstItem="T1i-tx-M0L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="mI5-r5-SjE"/>
                         </constraints>
