@@ -2,11 +2,11 @@
 import Spring
 
 struct Animation {
-    var preset: String = ""
-    var curve: String = ""
-    var force: Double = 0
-    var duration: Double = 0
-    var delay: Double = 0
+    var preset = ""
+    var curve = ""
+    var force = 0.0
+    var duration = 0.0
+    var delay = 0.0
 }
 
 
