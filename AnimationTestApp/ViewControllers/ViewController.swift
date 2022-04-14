@@ -13,56 +13,47 @@ class ViewController: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet var springAnimationView: SpringView!
     
-    @IBOutlet var presetLabel: UILabel!
-    @IBOutlet var curveLabel: UILabel!
-    @IBOutlet var forceLabel: UILabel!
-    @IBOutlet var durationLabel: UILabel!
-    @IBOutlet var delayLabel: UILabel!
+    @IBOutlet var descriptionLabel: UILabel!
     
     //MARK: - Private Properties
-    private var animation = Animation.getAnimation()
+    var animation = Animation.getRandomAnimation()
     
     //MARK: - viewDidLoad
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        randomizeAnimation()
         updateUI()
     }
     
     //MARK: - IBActions
     @IBAction func runButtonPressed(_ sender: UIButton) {
+        updateUI()
+        
         springAnimationView.animation = animation.preset
-        springAnimationView.curve = animation.curve
         springAnimationView.force = animation.force
         springAnimationView.duration = animation.duration
         springAnimationView.delay = animation.delay
+        springAnimationView.curve = animation.curve
         springAnimationView.animate()
         
-        updateUI()
-        
-        randomizeAnimation()
-        
+        animation = Animation.getRandomAnimation()
         sender.setTitle("Run \(animation.preset)", for: .normal)
     }
 }
 
 //MARK: - Private methods
 extension ViewController {
-    private func randomizeAnimation() {
-        animation.preset = Spring.AnimationPreset.allCases.randomElement()?.rawValue ?? ""
-        animation.curve = Spring.AnimationCurve.allCases.randomElement()?.rawValue ?? ""
-        animation.force = Double.random(in: 0.1...1.0)
-        animation.duration = Double.random(in: 0.5...1.0)
-        animation.delay = Double.random(in: 0.1...0.5)
-    }
-    
+  
     private func updateUI() {
-        presetLabel.text = "Preset: \(animation.preset)"
-        curveLabel.text = "Curve: \(animation.curve)"
-        forceLabel.text = "Force: \(String(format: "%.2f", animation.force))"
-        durationLabel.text = "Duration: \(String(format: "%.2f", animation.duration))"
-        delayLabel.text = "Delay: \(String(format: "%.2f", animation.delay))"
+        
+        descriptionLabel.text =
+"""
+Preset: \(animation.preset)
+Curve: \(animation.curve)
+Force: \(String(format: "%.2f", animation.force))
+Duration: \(String(format: "%.2f",animation.duration))
+Delay: \(String(format: "%.2f",animation.delay))
+"""
     }
 }
 

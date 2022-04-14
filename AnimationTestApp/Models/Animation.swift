@@ -1,5 +1,9 @@
-
-import Spring
+//
+//  ViewController.swift
+//  AnimationTestApp
+//
+//  Created by Dinmukhammed Sagyntkan on 05.04.2022.
+//
 
 struct Animation {
     var preset: String
@@ -8,17 +12,15 @@ struct Animation {
     var duration: Double
     var delay: Double
     
-    static func getAnimation() -> Animation {
+    
+    static func getRandomAnimation() -> Animation {
         return Animation(
-            preset: "",
-            curve: "",
-            force: 0,
-            duration: 0,
-            delay: 0
+            preset: AnimationPreset.allCases.randomElement()?.rawValue ?? "",
+            curve: AnimationCurve.allCases.randomElement()?.rawValue ?? "",
+            force: Double.random(in: 0.1...1.0),
+            duration: Double.random(in: 0.5...1.0),
+            delay: Double.random(in: 0.1...0.5)
         )
     }
 }
-
-
-
 

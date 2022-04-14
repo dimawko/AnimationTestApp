@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		82509166CFE4D7BA3CCC8FD2 /* Pods_AnimationTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EEE2141C60B162F5DD8DAD /* Pods_AnimationTestApp.framework */; };
+		2AAA850F644EB5E2EED962A7 /* Pods_AnimationTestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3ACD86FA2EA1311362C3F73B /* Pods_AnimationTestApp.framework */; };
 		C20D29E427FC6F0300444DA2 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20D29E327FC6F0300444DA2 /* Animation.swift */; };
 		C239AFDA27FC69020053F77E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239AFD927FC69020053F77E /* AppDelegate.swift */; };
 		C239AFDC27FC69020053F77E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C239AFDB27FC69020053F77E /* SceneDelegate.swift */; };
@@ -15,12 +15,13 @@
 		C239AFE127FC69020053F77E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C239AFDF27FC69020053F77E /* Main.storyboard */; };
 		C239AFE327FC69040053F77E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C239AFE227FC69040053F77E /* Assets.xcassets */; };
 		C239AFE627FC69040053F77E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C239AFE427FC69040053F77E /* LaunchScreen.storyboard */; };
+		C243AEDB280855B5006F3AB1 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C243AEDA280855B5006F3AB1 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		46D725BF9344F2A3FF900F9D /* Pods-AnimationTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTestApp.release.xcconfig"; path = "Target Support Files/Pods-AnimationTestApp/Pods-AnimationTestApp.release.xcconfig"; sourceTree = "<group>"; };
-		55057EF5BC54A722EC06B3C6 /* Pods-AnimationTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTestApp.debug.xcconfig"; path = "Target Support Files/Pods-AnimationTestApp/Pods-AnimationTestApp.debug.xcconfig"; sourceTree = "<group>"; };
-		B9EEE2141C60B162F5DD8DAD /* Pods_AnimationTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ACD86FA2EA1311362C3F73B /* Pods_AnimationTestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimationTestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62BA24E425F78C7CEF9184ED /* Pods-AnimationTestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTestApp.debug.xcconfig"; path = "Target Support Files/Pods-AnimationTestApp/Pods-AnimationTestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		97F51ED00A621BFB525DD41D /* Pods-AnimationTestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTestApp.release.xcconfig"; path = "Target Support Files/Pods-AnimationTestApp/Pods-AnimationTestApp.release.xcconfig"; sourceTree = "<group>"; };
 		C20D29E327FC6F0300444DA2 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		C239AFD627FC69020053F77E /* AnimationTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C239AFD927FC69020053F77E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +31,7 @@
 		C239AFE227FC69040053F77E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C239AFE527FC69040053F77E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C239AFE727FC69040053F77E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C243AEDA280855B5006F3AB1 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,26 +39,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82509166CFE4D7BA3CCC8FD2 /* Pods_AnimationTestApp.framework in Frameworks */,
+				2AAA850F644EB5E2EED962A7 /* Pods_AnimationTestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080343679CF841020E418E83 /* Pods */ = {
+		2C81180A6D17B24EA2F7D926 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				55057EF5BC54A722EC06B3C6 /* Pods-AnimationTestApp.debug.xcconfig */,
-				46D725BF9344F2A3FF900F9D /* Pods-AnimationTestApp.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		6860F08BD047EC7146D628EE /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				B9EEE2141C60B162F5DD8DAD /* Pods_AnimationTestApp.framework */,
+				3ACD86FA2EA1311362C3F73B /* Pods_AnimationTestApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -109,8 +102,8 @@
 			children = (
 				C239AFD827FC69020053F77E /* AnimationTestApp */,
 				C239AFD727FC69020053F77E /* Products */,
-				080343679CF841020E418E83 /* Pods */,
-				6860F08BD047EC7146D628EE /* Frameworks */,
+				D02AF012CAC80E25840BCBCD /* Pods */,
+				2C81180A6D17B24EA2F7D926 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +118,7 @@
 		C239AFD827FC69020053F77E /* AnimationTestApp */ = {
 			isa = PBXGroup;
 			children = (
+				C243AED9280855A9006F3AB1 /* Services */,
 				C20D29E227FC6EEB00444DA2 /* Models */,
 				C20D29E027FC6EBE00444DA2 /* ViewControllers */,
 				C20D29DF27FC6EB700444DA2 /* Storyboards */,
@@ -132,6 +126,23 @@
 				C20D29DE27FC6EB100444DA2 /* App */,
 			);
 			path = AnimationTestApp;
+			sourceTree = "<group>";
+		};
+		C243AED9280855A9006F3AB1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C243AEDA280855B5006F3AB1 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D02AF012CAC80E25840BCBCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				62BA24E425F78C7CEF9184ED /* Pods-AnimationTestApp.debug.xcconfig */,
+				97F51ED00A621BFB525DD41D /* Pods-AnimationTestApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C239AFDE27FC69020053F77E /* ViewController.swift in Sources */,
+				C243AEDB280855B5006F3AB1 /* DataManager.swift in Sources */,
 				C239AFDA27FC69020053F77E /* AppDelegate.swift in Sources */,
 				C20D29E427FC6F0300444DA2 /* Animation.swift in Sources */,
 				C239AFDC27FC69020053F77E /* SceneDelegate.swift in Sources */,
@@ -394,7 +406,7 @@
 		};
 		C239AFEB27FC69040053F77E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55057EF5BC54A722EC06B3C6 /* Pods-AnimationTestApp.debug.xcconfig */;
+			baseConfigurationReference = 62BA24E425F78C7CEF9184ED /* Pods-AnimationTestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -423,7 +435,7 @@
 		};
 		C239AFEC27FC69040053F77E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46D725BF9344F2A3FF900F9D /* Pods-AnimationTestApp.release.xcconfig */;
+			baseConfigurationReference = 97F51ED00A621BFB525DD41D /* Pods-AnimationTestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

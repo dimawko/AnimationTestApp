@@ -10,12 +10,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Spring:
-    :commit: 053e7d2ba3106aaebbbc29c6c27075dcc8dbef92
+    :commit: 90cc6f0b6e45e8815d24377f2f7b5d49c3f1a463
     :git: https://github.com/LexDeBash/Spring.git
 
 SPEC CHECKSUMS:
   Spring: 3e8b7d144afa52f26cf1ddba349812388de6ceb7
 
-PODFILE CHECKSUM: 14397cb05dd99725b7cf824f7bfee86b9e0fe8ab
+PODFILE CHECKSUM: 29e8e8d4bfe28e54c325a2d06faf7223c298b42f
 
 COCOAPODS: 1.11.2
